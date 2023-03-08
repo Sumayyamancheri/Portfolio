@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Sumayya_Mancheri Portfolio </title>
+          <!-----------Google Fonts-->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&family=Playfair+Display&display=swap" rel="stylesheet">
+          <!------------cdjns/libraries/fontawesome-->
+          <script src="https://kit.fontawesome.com/58cf6a9a78.js" crossorigin="anonymous"></script>
+
+      <!-- ===================== CSS ===========================-->
+
+          <link rel="stylesheet" href="assets/css/style.css ">
+
+       <!-----------------------------Bootstrap------------>
+       
+     </head>
+      
+
+
+     <body>
+          <!-------------------HOME----------------->
+          <div id="header">
+               
+               <div class="container">
+                    <nav>
+                         <h2 class="logo">Port<span>folio</span></h2>
+                         <ul id="sidemenu">
+                              <li><a href="#header">HOME</a></li>
+                              <li><a href="#about">ABOUT US</a></li>
+                              <li><a href="#services">SERVICES</a></li>
+                              <li><a href="#contact">CONTACT ME</a></li>
+                              <i class="fa fa-solid fa-xmark" onclick="closemenu()"></i> 
+                         </ul>
+                         <i class="fa fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    <div class="header-text">
+                         <h1> Hello, My name is <h1>
+                         <h3>Sumayya Mancheri </h3>
+                         <h1>I'm a Front-End-Developer with high vision and forward thinking</h1>
+
+                    </div>
+               </div>
+          </div>
+
+          <!-------------------------------------ABOUT SECTION--------->
+          <div id="about">
+               <div class="container">
+                    <div class="row">
+                         <div class="about-col-1">
+                             <img src= "../HTML/assets/img/selfies.JPG">
+                         </div>
+                          
+                         <div class="about-col-2">
+                               <h2 class="sub-title">About Me</h2>
+                              <p>An enthusiastic Web design and development certified graduate with a degree in electronics and communication, 
+                                   six months of web design experience seeks to join a company 
+                                   that offers a platform for me to advance my professional knowledge and abilities. 
+                              </p>
+                              <div class="tab">
+                                   <p class="tablinks" onclick="openCity(event, 'Skills')" id="defaultOpen">Skills</p>
+                                   <p class="tablinks" onclick="openCity(event, 'Experience')">Experience</p>
+                                   <p class="tablinks" onclick="openCity(event, 'Qualification')">Qualification</p>
+                              </div>
+                                 
+                              <div id="Skills" class="tabcontent">
+                                   <ul>
+                                        <li><span>UI/UX</span></li>
+                                        <li><span>HTML</span><br></li>
+                                        <li><span>CSS</span></li>
+                                        <li><span>JAVASCRIPT</span></li>
+                                        <li><span>PHP</span><br></li> 
+                                        <li><span>Microsoft Office, Adobe Reader, Photoshop and Corel Draw</span><br></li>
+                                   </ul>
+
+                              </div>
+                                 
+                              <div id="Experience" class="tabcontent">
+                                   <ul>
+                                        <li><span>May 2019 to Feb 2021</span><br>Customer Service Representative</li>
+                                        <li><span>August 2018 to Jan 2019</span><br>Web Design Instructor</li>
+                                        <li><span>3rd Oct 2016 to 4th May 2018</span><br>HR Assistant</li>
+                                   </ul>
+ 
+                              </div>
+                                 
+                              <div id="Qualification" class="tabcontent">
+                                   <ul>
+                                        <li><span>Merit Certification by APTECH </span> in Web Design and Development</li>
+                                        <li><span>Bachelor of Technology:</span> Electronics and Communication <br>CUSAT University Kerala India</span></li>
+                                             
+                                   </ul>
+
+                              </div>
+                         </div>    
+                    </div>
+               </div>
+          </div>  
+
+          <script>
+               function openCity(evt, cityName) {
+                 var i, tabcontent, tablinks;
+                 tabcontent = document.getElementsByClassName("tabcontent");
+                 for (i = 0; i < tabcontent.length; i++) {
+                   tabcontent[i].style.display = "none";
+                 }
+                 tablinks = document.getElementsByClassName("tablinks");
+                 for (i = 0; i < tablinks.length; i++) {
+                   tablinks[i].className = tablinks[i].className.replace(" active", "");
+                 }
+                 document.getElementById(cityName).style.display = "block";
+                 evt.currentTarget.className += " active";
+               }
+               
+               // Get the element with id="defaultOpen" and click on it
+               document.getElementById("defaultOpen").click();
+          </script>
+
+ <!-----------------------Services--------------->
+           <div id="services">
+               <div class="container">
+                    <h1 class="sub-title">My Services</h1>
+                    <div class= "services-list">
+                         <div>
+                              <i class="fa-solid fa-laptop-code"></i>
+                              <h2>Web Design</h2>
+                              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quae nemo placeat laborum, enim et temporibus eveniet rerum minima. Repellat consequatur voluptatum molestias illum eius pariatur aut veritatis, earum quas.</p>
+                              <a href="">Learn More</a>
+                         </div>
+                         <div>
+                              <i class="fa-brands fa-codepen"></i>
+                              <h2>UI/UX Design</h2>
+                              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quae nemo placeat laborum, enim et temporibus eveniet rerum minima. Repellat consequatur voluptatum molestias illum eius pariatur aut veritatis, earum quas.</p>
+                              <a href="">Learn More</a>
+                         </div>
+                         <div>
+                              <i class="fa-sharp fa-solid fa-code"></i>
+                              <h2>APP Design</h2>
+                              <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta quae nemo placeat laborum, enim et temporibus eveniet rerum minima. Repellat consequatur voluptatum molestias illum eius pariatur aut veritatis, earum quas.</p>
+                              <a href="">Learn More</a>
+                         </div>
+                    </div>
+               </div>
+           </div>
+ <!--------------------------------------        Contact Section         ----------------->
+          
+          <div id="contact">
+               <div class="container container-contact">
+                    <div class="row">
+                         <div class="contact-left">
+                              <h1 class="sub-title">Contact Me</h1>
+                              <p><i class="fa-solid fa-paper-plane"></i>msumayyakurikkal@gmail.com</p>
+                              <p><i class="fa-sharp fa-solid fa-square-phone"></i>9022173656</p>
+                              <div class="social-icons">
+                                   <a href="#"><i class="fab fa-facebook"></i></a>
+                                   <a href="#"><i class="fab fa-instagram"></i></a>
+                                   <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                              </div>
+                              <a href="../HTML/assets/PDF/Sumayya_Mancheri .pdf" download class="btn btn2">Download CV</a>
+                         </div>
+
+
+
+                         <div class="contact-right">
+                              <form name= "submit-to-google-sheet">
+                                   <input type= "text" name= "Name" id= "name" placeholder= "Enter Your Name" required>
+                                   <input type= "email" name= "Email" id= "mail" placeholder= "Enter Your Email">
+                                   <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                                   <button type="Submit" class="btn btn2">Submit </button>
+                              </form>
+                              <span id="msg"> </span>
+                         </div>
+                    </div>
+               </div>
+
+               <div class="copyright">
+                    <p>Copyright &#9400; Sumayya </p>
+               </div>
+          </div>                 
+                  
+           <!------------ For Small Screen--------------->
+          <script>
+               var sidemeu=document.getElementById("sidemenu");
+ 
+               function openmenu(){
+                    sidemeu.style.right="0"
+
+               }
+               function closemenu(){
+                    sidemeu.style.right="-200px"
+
+               }
+          </script>
+
+          <!---------------- Contact Form ------------>
+
+          
+             
+             <script>
+               const scriptURL = 'https://script.google.com/macros/s/AKfycbzz0rB5GQZQhlSNb2HZrZrit-gIADAYhxo9lRdF5EcvJ1utuIVP9iZOmtXqswA_P209/exec'
+               const form = document.forms['submit-to-google-sheet']
+               const msg = document.getElementById("msg")
+             
+               form.addEventListener('submit', e => {
+                 e.preventDefault()
+                 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                   .then(response => {
+                      msg.innerHTML = "Message Sent Succesfully"
+                      setTimeout(function(){
+                         msg.innerHTML = ""
+                      },5000)
+                      form.reset()
+                   })
+                   .catch(error => console.error('Error!', error.message))
+               })
+             </script>
+     </body>
+</html>
