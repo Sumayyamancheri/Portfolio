@@ -230,6 +230,11 @@ nav ul li a:hover::after{
 .contact-left p{
     margin-top: 30px;  
   }
+.contact-left a{
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;  
+  }
 .contact-left i{
       color: #d58aa2 ;
       margin-right: 15px;
